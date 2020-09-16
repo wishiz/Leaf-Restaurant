@@ -1,0 +1,17 @@
+.app {
+  position: relative;
+}
+
+.img-cover {
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.img-contain {
+  object-fit: contain;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

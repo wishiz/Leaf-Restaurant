@@ -1,0 +1,24 @@
+@import '../../styles/configs';
+
+.content-limiter {
+  padding: 0 32px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $breakpoint-up-xxs) {
+    padding: 0 16px;
+  }
+
+  &--width-sm {
+    max-width: 1170px;
+  }
+
+  &--width-lg {
+    max-width: 1624px;
+  }
+
+  &--full-width {
+    max-width: 100%;
+    padding: initial;
+    margin: initial;
+  }
+}

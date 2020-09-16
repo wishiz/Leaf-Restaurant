@@ -1,0 +1,73 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/configs';
+
+.lunch {
+  max-width: 100%;
+  margin: 0 auto;
+  animation: show 0.3s ease-in-out;
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    grid-row-gap: 48px;
+    align-items: start;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      display: block;
+    }
+  }
+
+  &__grid-chicken,
+  &__grid-steak {
+    display: grid;
+    grid-gap: 24px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__grid-fish {
+    display: grid;
+    grid-gap: 24px;
+  }
+
+  .dish-type {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+.dish {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  grid-gap: 4px;
+
+  &__name {
+    font-size: 1.25rem;
+    font-family: 'Prata';
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      font-size: 1rem;
+    }
+  }
+
+  &__price {
+    justify-self: end;
+    font-size: 1.125rem;
+    font-family: 'Prata';
+  }
+
+  &__divider {
+    height: 1px;
+    border-bottom: dotted $grey-1 1px;
+  }
+
+  &__desc {
+    color: $grey-4;
+    line-height: 1.7;
+    font-size: 0.9rem;
+  }
+}

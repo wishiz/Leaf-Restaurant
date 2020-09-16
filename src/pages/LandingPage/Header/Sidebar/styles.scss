@@ -1,0 +1,42 @@
+@import '../../../../styles/configs';
+@import '../../../../styles/colors';
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  display: none;
+  transform: translateX(-100%);
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: soft-light;
+  transition: transform 0.2s ease;
+  position: fixed;
+  padding: 32px;
+  z-index: 6;
+
+  @media screen and (max-width: $breakpoint-up-sm) {
+    display: block;
+  }
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__list-item {
+    display: flex;
+    height: 56px;
+    width: 160px;
+    align-items: center;
+    font-size: 1.125rem;
+    color: $white;
+    transition: text-decoration 0.5s ease, background-color 0.5s ease,
+      color 0.5s ease;
+    padding: 0 16px;
+    border-radius: 30px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $white !important;
+    }
+  }
+}

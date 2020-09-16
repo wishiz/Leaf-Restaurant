@@ -1,0 +1,46 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.react-icon {
+  @include center;
+
+  > svg {
+    vertical-align: middle;
+  }
+
+  &--size-xs {
+    font-size: 0.625rem;
+  }
+
+  &--size-sm {
+    font-size: 0.75rem;
+  }
+
+  &--size-md {
+    font-size: 1rem;
+  }
+
+  &--size-lg {
+    font-size: 1.25rem;
+  }
+
+  &--size-xl {
+    font-size: 1.5rem;
+  }
+
+  &--size-xxl {
+    font-size: 2rem;
+  }
+
+  &--size-xxxl {
+    font-size: 2.5rem;
+  }
+
+  &--color-black {
+    color: $black;
+  }
+
+  &--color-white {
+    color: $white;
+  }
+}

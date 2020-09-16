@@ -1,0 +1,48 @@
+@import '../../styles/colors';
+@import '../../styles/configs';
+
+.section-title {
+  &__heading {
+    font-family: 'Prata';
+    font-size: 3rem;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.125rem;
+    color: $grey-1;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      font-size: 1rem;
+    }
+
+    &--upper-case {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+    }
+  }
+
+  &__divider {
+    max-width: 80px;
+    margin-bottom: 32px !important;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &--light {
+    .section-title__heading {
+      color: $white;
+    }
+
+    .section-title__desc {
+      color: $white;
+    }
+  }
+}

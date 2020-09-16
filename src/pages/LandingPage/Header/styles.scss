@@ -1,0 +1,83 @@
+@import '../../../styles/configs';
+@import '../../../styles/colors';
+
+.header,
+.header-on-scroll {
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  box-shadow: $box-shadow-header;
+  transition: background-color 0.4s ease;
+
+  &__content {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transition: height 0.4s ease;
+
+    .navbar {
+      @media screen and (max-width: $breakpoint-up-sm) {
+        display: none;
+      }
+    }
+
+    .hamburger-btn {
+      display: none;
+
+      @media screen and (max-width: $breakpoint-up-sm) {
+        display: block;
+      }
+    }
+  }
+  &__icon-wrapper {
+    max-width: 200px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      max-width: 120px;
+    }
+
+    .header__alt-icon {
+      display: none;
+    }
+  }
+}
+
+.header-on-scroll {
+  background-color: $white;
+
+  &__content {
+    height: 70px;
+
+    .navbar__item {
+      color: $black;
+      border-bottom: 1px transparent solid;
+
+      &:hover {
+        border-bottom: 1px $black solid;
+        color: $black !important;
+      }
+    }
+
+    .hamburger-btn {
+      p {
+        background-color: $black;
+      }
+    }
+  }
+
+  &__icon-wrapper {
+    max-width: 70px;
+
+    .header__icon {
+      display: none;
+    }
+
+    .header__alt-icon {
+      display: block;
+    }
+  }
+}

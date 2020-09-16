@@ -1,0 +1,50 @@
+@import '../../../styles/colors';
+@import '../../../styles/configs';
+
+.react-datepicker {
+  animation: show 0.5s ease;
+
+  &__month-container,
+  &__time-container {
+    border-radius: 0;
+    font-size: 0.7rem;
+    background-color: $white;
+    border: $grey-3 1px solid;
+    box-shadow: $box-shadow-form;
+  }
+
+  &__header {
+    background-color: $beige;
+    border-radius: 0;
+
+    div {
+      color: $white;
+      font-weight: 300;
+    }
+  }
+
+  &__navigation {
+    border-left-color: $white;
+  }
+
+  &__day {
+    border-radius: 0;
+
+    &:hover {
+      background-color: $grey-3;
+      border-radius: 0;
+    }
+
+    &--selected {
+      background-color: $grey-3;
+      color: initial;
+    }
+  }
+
+  &__time-list-item {
+    &--selected {
+      background-color: $grey-3 !important;
+      color: $black !important;
+    }
+  }
+}

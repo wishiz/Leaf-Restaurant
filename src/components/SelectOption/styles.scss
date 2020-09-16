@@ -1,0 +1,38 @@
+@import '../../styles/colors';
+
+.select-option {
+  &__option {
+    .css-yk16xz-control {
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      padding: 8px 24px;
+      border: $grey-5 1px solid;
+      height: 48px;
+      border-radius: 0;
+      width: 100%;
+      font-size: 0.9rem;
+
+      &:hover {
+        border-color: $grey-1;
+      }
+    }
+
+    .css-1pahdxg-control {
+      border-radius: 0;
+      color: $grey-1;
+      height: 48px;
+      border: $beige 1px solid;
+      box-shadow: none;
+      font-size: 0.9rem;
+      padding: 8px 24px;
+
+      &:hover {
+        border: $beige 1px solid;
+      }
+    }
+
+    .css-g1d714-ValueContainer {
+      padding: initial;
+    }
+  }
+}

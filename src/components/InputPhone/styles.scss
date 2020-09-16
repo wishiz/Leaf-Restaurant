@@ -1,0 +1,35 @@
+@import '../../styles/colors';
+
+.input-phone {
+  .react-tel-input {
+    font-family: 'Prata';
+    font-size: 0.9rem;
+
+    .form-control {
+      color: $grey-1;
+      cursor: pointer;
+      padding: 12px 24px 10px 24px;
+      transition: border-color 0.3s ease;
+      border: $grey-5 1px solid;
+      height: 48px;
+      width: 100%;
+      border-radius: 0;
+
+      &:hover {
+        border-color: $grey-1;
+      }
+
+      &:focus {
+        border-color: $beige;
+      }
+    }
+
+    .flag-dropdown {
+      display: none;
+    }
+  }
+
+  &:focus {
+    border-color: $beige;
+  }
+}

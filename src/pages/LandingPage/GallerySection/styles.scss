@@ -1,0 +1,56 @@
+@import '../../../styles/configs';
+
+.gallery {
+  &__container {
+    padding: 16px;
+  }
+
+  &__grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 16px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 300px);
+    }
+
+    @media screen and (max-width: $breakpoint-up-xs) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(10, 250px);
+    }
+  }
+
+  &__grid-card3 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+  }
+
+  &__grid-card5 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+  }
+
+  &__grid-card {
+    cursor: pointer;
+    overflow-x: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

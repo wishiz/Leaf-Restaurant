@@ -1,0 +1,52 @@
+@import '../../styles/configs';
+@import '../../styles/colors';
+
+.button {
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+  &--size-sm {
+    height: 32px;
+    padding: 0 30px;
+    font-size: 0.75rem;
+  }
+
+  &--size-md {
+    height: 46px;
+    padding: 0 24px;
+    font-size: 1rem;
+  }
+
+  &--size-lg {
+    height: 56px;
+    padding: 0 24px;
+    font-size: 1rem;
+  }
+
+  &--style-rounded {
+    border-radius: 30px;
+  }
+
+  &--color-white {
+    background-color: $white;
+  }
+
+  &--color-beige {
+    background-color: $beige;
+    color: $white;
+    border: transparent 1px solid;
+
+    &:hover {
+      color: $black;
+      border: $black 1px solid;
+    }
+  }
+
+  &--color-transparent {
+    background-color: transparent;
+    border: 1px solid $black;
+
+    &:hover {
+      background-color: $beige;
+    }
+  }
+}

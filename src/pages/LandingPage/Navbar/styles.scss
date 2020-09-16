@@ -1,0 +1,26 @@
+@import '../../../styles/colors';
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-top: 8px;
+    margin-left: 32px;
+    font-family: 'Prata', serif;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 5px;
+    transition: 0.3s ease border-bottom, 0.3s ease color;
+    color: $white;
+
+    &:hover {
+      border-bottom: 1px $white solid;
+      color: $white !important;
+    }
+
+    &--active {
+      border-bottom: 1px $black solid;
+    }
+  }
+}

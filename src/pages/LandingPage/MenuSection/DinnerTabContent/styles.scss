@@ -1,0 +1,77 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/configs';
+
+.dinner {
+  max-width: 100%;
+  margin: 0 auto;
+  animation: show 0.3s ease-in-out;
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    grid-row-gap: 48px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      display: block;
+    }
+  }
+
+  &__grid-sushi,
+  &__grid-pasta,
+  &__grid-main {
+    display: grid;
+    grid-gap: 24px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__grid-wines {
+    display: grid;
+    grid-gap: 24px;
+  }
+
+  .dish-type {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+.dish {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  grid-template:
+    'd e' auto
+    'f f' auto
+    'g g' auto;
+  grid-gap: 4px;
+
+  &__name {
+    grid-area: d;
+    font-size: 1.25rem;
+    font-family: 'Prata';
+  }
+
+  &__price {
+    grid-area: e;
+    justify-self: end;
+    font-size: 1.125rem;
+    font-family: 'Prata';
+  }
+
+  &__divider {
+    grid-area: f;
+    height: 1px;
+    border-bottom: dotted $grey-1 1px;
+  }
+
+  &__desc {
+    grid-area: g;
+    color: $grey-4;
+    line-height: 1.7;
+    font-size: 0.9rem;
+  }
+}

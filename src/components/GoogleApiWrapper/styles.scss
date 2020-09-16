@@ -1,0 +1,11 @@
+@import '../../styles/configs';
+
+.google-map {
+  max-width: 50%;
+  max-height: 700px;
+
+  @media screen and (max-width: $breakpoint-up-sm) {
+    max-width: 100%;
+    max-height: 400px;
+  }
+}

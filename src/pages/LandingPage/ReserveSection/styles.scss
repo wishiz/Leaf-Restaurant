@@ -1,0 +1,48 @@
+@import '../../../styles/configs';
+
+.reserve {
+  &__container {
+    min-height: 700px;
+    display: flex;
+    font-family: 'Prata';
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__map-block {
+    max-width: 50%;
+    width: 100%;
+
+    div {
+      height: 700px;
+      @media screen and (max-width: $breakpoint-up-sm) {
+        height: 400px;
+      }
+    }
+  }
+
+  &__info-block {
+    max-width: 50%;
+    padding: 0 16px 0 40px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      max-width: 100%;
+      padding: 32px 16px;
+      margin: 0;
+    }
+  }
+
+  &__info-block-title {
+    @media screen and (max-width: $breakpoint-up-sm) {
+      text-align: center;
+    }
+
+    .section-title__divider {
+      @media screen and (max-width: $breakpoint-up-sm) {
+        margin: 0 auto;
+      }
+    }
+  }
+}
