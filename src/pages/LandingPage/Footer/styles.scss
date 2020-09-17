@@ -134,16 +134,16 @@
   &__reserve {
     display: inline-block;
     color: $white;
-    transition: 0.3s ease transform;
+    transition: 0.3s ease border-color, 0.3s ease color;
     font-size: 1rem;
     background-color: $beige;
     border-radius: 30px;
     padding: 8px 16px 6px;
     font-family: 'Prata';
+    border: transparent 1px solid;
 
     &:hover {
-      transform: translateY(-2px);
-      color: $white !important;
+      border-color: $black;
     }
   }
 }
