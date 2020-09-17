@@ -132,14 +132,18 @@
   }
 
   &__reserve {
-    display: block;
+    display: inline-block;
     color: $white;
     transition: 0.3s ease transform;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    background-color: $beige;
+    border-radius: 30px;
+    padding: 8px 16px 6px;
+    font-family: 'Prata';
 
     &:hover {
-      color: $beige !important;
       transform: translateY(-2px);
+      color: $white !important;
     }
   }
 }

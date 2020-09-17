@@ -1,6 +1,6 @@
-import aboutCheers from '../assets/images/about_cheers.jpg';
-import aboutRestaurant from '../assets/images/about_restaurant.jpg';
-import aboutServe from '../assets/images/about_serve.jpg';
+import aboutCheers from '../assets/images/about_cheers.webp';
+import aboutRestaurant from '../assets/images/about_restaurant.webp';
+import aboutServe from '../assets/images/about_serve.webp';
 import aboutSteak from '../assets/images/about_steak.jpg';
 import aboutWine from '../assets/images/about_wine.jpg';
 

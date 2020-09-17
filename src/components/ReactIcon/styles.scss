@@ -38,9 +38,17 @@
 
   &--color-black {
     color: $black;
+
+    &:hover {
+      color: inherit;
+    }
   }
 
   &--color-white {
     color: $white;
+
+    &:hover {
+      color: inherit;
+    }
   }
 }
