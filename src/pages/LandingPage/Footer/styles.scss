@@ -20,13 +20,20 @@
 
   &__container {
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 40px;
     min-height: 340px;
-    display: flex;
-    justify-content: space-around;
 
     @media screen and (max-width: $breakpoint-up-xs) {
       padding-top: 40px;
+    }
+  }
+
+  &__info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: $breakpoint-up-xs) {
       flex-direction: column;
     }
   }
@@ -145,5 +152,33 @@
     &:hover {
       border-color: $black;
     }
+  }
+
+  &__license {
+    font-size: 0.8rem;
+    display: flex;
+    color: $grey-4;
+
+    a {
+      color: $beige;
+      text-decoration: none;
+      transition: 0.3s ease transform;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &__license-created,
+  &__license-designed {
+    display: flex;
+    p {
+      margin-right: 4px;
+    }
+  }
+
+  &__license-created {
+    margin-right: 16px;
   }
 }
